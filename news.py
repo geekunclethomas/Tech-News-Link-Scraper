@@ -69,18 +69,23 @@ def HowToGeek(parsedPage):
 def main():
      
 
+    try:
 
-    if int(urlIndex-1) == 0:
-        HackerNews(soup)        
+        if int(urlIndex-1) == 0:
+            HackerNews(soup)        
 
-    elif int(urlIndex-1) == 1:
-        HardwareNews(soup)
+        elif int(urlIndex-1) == 1:
+            HardwareNews(soup)
     
-    elif int(urlIndex-1) == 2:
-        HowToGeek(soup)
+        elif int(urlIndex-1) == 2:
+            HowToGeek(soup)
 
-    else:
-        print("Invalid Input")
+        else:
+            print("Invalid Input")
+    except KeyError as err:
+        print('Error:','',err)
+
+    
 
 
 if __name__ == '__main__':

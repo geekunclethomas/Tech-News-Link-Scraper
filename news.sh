@@ -39,7 +39,7 @@ if [ $Sel = 4 ];then
 
 else
 
-    python3 /home/rose/infoer/Infoer.py $Sel | more 
+    python3 /home/rose/news/news.py $Sel | more 
 fi
 
 echo "  Would You Like To Continue My Lord: [y/n] "
